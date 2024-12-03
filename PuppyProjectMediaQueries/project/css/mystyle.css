@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+header {
+  background-color: #195774;
+}
+/* puppy lovers title */
+header h1 {
+  text-align: center;
+  color: white;
+  padding-top: 27px;
+  padding-bottom: 24px;
+}
+/* to create space */
+div {
+  margin: 15px 0;
+}
+/* banner image */
+.puppyLover img {
+  width: 100%;
+  margin: 0 0 15px;
+}
+/* all the 4 puppies */
+#puppies {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+/* more puppy text */
+#morePuppis {
+  text-align: center;
+  font-size: 30px;
+}
+/* puppy missing */
+.puppy {
+  display: none;
+}
+footer {
+  background-color: #195774;
+}
+/* developed by part */
+footer p {
+  text-align: center;
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  font-size: 30px;
+}
+
+/* media query for width 768px */
+@media (min-width: 768px) {
+  #puppies {
+    display: flex;
+    margin: 50px auto;
+    /* width: 960px; */
+    justify-content: space-between;
+  }
+  .img2,
+  .img3 {
+    width: 26%;
+  }
+  .img4,
+  .img5 {
+    width: 40%;
+  }
+  .puppy {
+    display: flex;
+    background-color: #195774;
+    align-items: center;
+    text-align: center;
+    width: 26%;
+    font-size: calc(25px + 1vw);
+  }
+}
+
+/* media query for width 992px */
+@media (min-width: 992px) {
+  #puppies {
+    width: 90%;
+  }
+  .img2,
+  .img3 {
+    width: 30%;
+  }
+  .img4,
+  .img5 {
+    width: 45%;
+  }
+  .puppy {
+    display: flex;
+    background-color: #ee4d65;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    font-size: calc(45px + 1vw);
+  }
+}
+
+/* media query for width 1200px */
+@media (min-width: 1200px) {
+  #puppies {
+    width: 96%;
+  }
+  .img2,
+  .img3 {
+    width: 32%;
+  }
+  .img4,
+  .img5 {
+    width: 48%;
+  }
+  .puppy {
+    display: flex;
+    background-color: #195774;
+    align-items: center;
+    text-align: center;
+    width: 32%;
+    font-size: calc(72px + 1vw);
+  }
+}
+/* font size: 4.5vw responsive font size
+flex:1,1,0;  it's same as flex:1
+0 and 1 describes weateher it have to grow or not
+flex: flexgrow, flex shrink, flex basis
+basis(intial value) :it determine the width by itself
+*/
